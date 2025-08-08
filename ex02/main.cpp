@@ -6,7 +6,7 @@
 /*   By: luifer <luifer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 19:10:52 by luifer            #+#    #+#             */
-/*   Updated: 2025/08/08 22:35:05 by luifer           ###   ########.fr       */
+/*   Updated: 2025/08/08 23:44:24 by luifer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,4 +70,5 @@ int main() {
         }
     }
     std::cout << "Test 4 passed: strArray2 and test2 match" << std::endl;
+    return(0);
 }
