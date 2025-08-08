@@ -6,7 +6,7 @@
 /*   By: luifer <luifer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 19:10:52 by luifer            #+#    #+#             */
-/*   Updated: 2025/08/08 19:22:13 by luifer           ###   ########.fr       */
+/*   Updated: 2025/08/08 22:35:05 by luifer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,5 +54,20 @@ int main() {
     strArray2[3] = "SCHOOL";
 
     Array<std::string> test(strArray);
+    for(int i = 0; i < 4; ++i){
+        if(strArray[i] != test[i]){
+            std::cerr << "Error: values differs..." << std::endl;
+            return(1);
+        }
+    }
+    std::cout << "Test 3 passed: strArray and test match" << std::endl;
     
+    Array<std::string> test2 = strArray2;
+    for(int i = 0; i < 4; i++){
+        if(test2[i] != strArray2[i]){
+            std::cerr << "Error: values differs..." << std::endl;
+            return(1);
+        }
+    }
+    std::cout << "Test 4 passed: strArray2 and test2 match" << std::endl;
 }
