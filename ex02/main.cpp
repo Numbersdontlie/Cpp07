@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luifer <luifer@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lperez-h <lperez-h@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 19:10:52 by luifer            #+#    #+#             */
-/*   Updated: 2025/08/08 23:44:24 by luifer           ###   ########.fr       */
+/*   Updated: 2025/08/18 16:50:43 by lperez-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int main() {
     try{
         intArray[530] = 0;
     }
-    catch(const std:;exception &e){
+    catch(const std::exception &e){
         std::cerr <<"Test 2 passed: " << e.what() << std::endl;
     }
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luifer <luifer@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lperez-h <lperez-h@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 00:08:39 by luifer            #+#    #+#             */
-/*   Updated: 2025/08/08 19:10:31 by luifer           ###   ########.fr       */
+/*   Updated: 2025/08/18 16:50:15 by lperez-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,17 @@ template <typename T>
 class Array {
     private:
         T *ptr;
-        unsigned int size;
+        unsigned int n;
     
     public:
         Array();
-        Array(unsigned int size);
+        Array(unsigned int n);
         Array(const Array<T> &other);
         Array<T> &operator=(const Array<T> &other);
         ~Array();
 
         //functions
-        unsigned int getSize() const;
+        unsigned int size() const;
 
         //operator []
         T &operator[](unsigned int idx);
@@ -41,7 +41,7 @@ class Array {
                 const char *what() const throw() {
                     return "Index is out of limits";
                 };
-        }
+        };
 };
 
 #include "Array.tpp"

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luifer <luifer@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lperez-h <lperez-h@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 23:54:22 by luifer            #+#    #+#             */
-/*   Updated: 2025/08/07 23:59:25 by luifer           ###   ########.fr       */
+/*   Updated: 2025/08/18 16:37:43 by lperez-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ int main() {
         std::cout << arr[i] << "." << std::endl;
     }
     std::cout << std::endl;
-
-    char arr2 [] = {'a', 'b', 'c', 'd', 'e'};
+	
+	char arr2 [] = {'a', 'b', 'c', 'd', 'e'};
     ::iter(arr2, 5, ::increase<char>);
     for (int i = 0; i < 5; ++i){
         std::cout << arr2[i] << "." << std::endl;
